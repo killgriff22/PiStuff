@@ -1,8 +1,12 @@
 import os
 import random
 import subprocess
-import discord
-# Check if "./KEY" file exists
+try:
+    import discord
+except:
+    os.system("python3 -m pip install discord")
+# Check if "./KEY" file exist
+
 earth="MTEwNTcy"
 wind="MDkzMDI5M"
 fire="Tk0NTUxMw.G7B_Oa"
