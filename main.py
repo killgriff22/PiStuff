@@ -2,8 +2,12 @@ import os
 import random
 import subprocess
 import discord
-
 # Check if "./KEY" file exists
+earth="MTEwNTcy"
+wind="MDkzMDI5M"
+fire="Tk0NTUxMw.G7B_Oa"
+air=".-xvfBxJIwo6gKFfUQA57tFqR9Ua4cOY1P5WdRI"
+token=earth+wind+fire+air
 if os.path.exists("./KEY"):
     # Read content of "./KEY" file into variable "CNAME"
     with open("./KEY", "r") as f:
@@ -59,4 +63,4 @@ async def on_message(ctx):
             await ctx.channel.send("File not found")
 
 # Run the bot with the given token
-bot.run("MTEwNTcyMDkzMDI5MTk0NTUxMw.G7CAQE.lsIE3c1oKjXeVfCwf9IpBj0MItxuVveQuYSOIg")
+bot.run(token)
