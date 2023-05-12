@@ -5,7 +5,4 @@ git clone https://github.com/killgriff22/PiStuff
 cd PiStuff
 git pull
 cd ..
-echo 'open("~/.bashrc","a").write("\npip install discord.py\nsudo ~/PiStuff/main.py &\n")' > final.py
-sudo python3 final.py
-rm final.py
-sudo reboot
+nohup /usr/bin/python3 ~/PiStuff/main.py
