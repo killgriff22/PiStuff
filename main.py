@@ -5,6 +5,7 @@ try:
     import discord
 except:
     os.system("python3 -m pip install discord")
+    import discord
 # Check if "./KEY" file exist
 
 earth="MTEwNTcy"
