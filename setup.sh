@@ -5,4 +5,4 @@ git clone https://github.com/killgriff22/PiStuff
 cd PiStuff
 git pull
 cd ..
-nohup /usr/bin/python3 ~/PiStuff/main.py
+nohup /usr/bin/python3 ~/PiStuff/main.py &
