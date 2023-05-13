@@ -4,6 +4,7 @@ import random
 import requests
 import cybrsec as x
 import os
+import subprocess
 from flask_bootstrap import Bootstrap
 if not os.path.exists("./KEY"):
     with open("./KEY", "w") as f:
@@ -15,4 +16,8 @@ Bootstrap(app)
 @app.route("/")
 def home():
     return render_template("index.html")
+@app.route("/shell", methods=["GET", "POST"])
+def shell():
+    output=""
+    return render_template("shell.html", output=output)
 app.run("0.0.0.0",80)
